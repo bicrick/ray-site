@@ -1,0 +1,9 @@
+# Source material and tooling — the page only loads assets/img, assets/instagram,
+# assets/marks, assets/icons, assets/social and assets/content
+assets/originals
+assets/photos
+assets/manifest.json
+scripts
+docs
+.github
+.claude

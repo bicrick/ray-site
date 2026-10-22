@@ -1,13 +1,32 @@
 :root {
-  --color-cream: #f7f5f2;
-  --color-cream-deep: #efece7;
-  --color-stone: #ddd8d0;
-  --color-charcoal: #161615;
-  --color-ink: #1c1b19;
-  --color-muted: #7a756e;
-  --color-accent: #3d6f6a;
+  /* Porcelain ground + glaze accents sampled from the work */
+  --color-cream: #f4f1ea;
+  --color-cream-deep: #ebe6dc;
+  --color-paper: #fbfaf7;
+  --color-stone: #d9d3c7;
+  --color-ink: #161514;
+  --color-muted: #6f6a62;
+  --color-navy: #232939;
+  --color-navy-deep: #191d29;
+  --color-teal: #1f9c8f;
+  --color-teal-bright: #3cc4b4;
+  --color-orange: #e0743a;
+  --color-ochre: #e3b23c;
+  --color-gold: #b8913a;
+  --color-accent: var(--color-teal);
 
-  --font-sans: "Instrument Sans", "Helvetica Neue", sans-serif;
+  /* Glaze colours sampled from the traced marks */
+  --glaze-black: #27252c;
+  --glaze-gold: #c4a050;
+  --glaze-teal: #5db2ac;
+  --glaze-orange: #c76a41;
+
+  /* Studio backdrop from the product photography */
+  --backdrop: linear-gradient(180deg, #232939 0%, #5c6277 45%, #a8aab9 72%, #d6d4df 100%);
+
+  --font-sans: "Instrument Sans", "Helvetica Neue", Arial, sans-serif;
+  --font-serif: var(--font-sans);
+  --font-mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
 
   --space-1: 0.25rem;
   --space-2: 0.5rem;
@@ -20,25 +39,26 @@
   --space-9: 6.5rem;
   --space-10: 9rem;
 
-  --text-xs: 0.6875rem;
-  --text-sm: 0.8125rem;
-  --text-base: 0.9375rem;
-  --text-md: 1.0625rem;
-  --text-lg: 1.25rem;
-  --text-xl: clamp(1.35rem, 2.8vw, 1.75rem);
-  --text-2xl: clamp(1.75rem, 5vw, 2.75rem);
-  --text-hero: clamp(2.5rem, 9vw, 5.25rem);
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-md: 1.125rem;
+  --text-lg: 1.375rem;
+  --text-xl: clamp(1.6rem, 3vw, 2.1rem);
+  --text-2xl: clamp(2.6rem, 6.5vw, 4.75rem);
+  --text-hero: clamp(3.6rem, 11vw, 9.5rem);
 
-  --nav-height: 3.25rem;
-  --content-max: 72rem;
-  --measure: 34rem;
+  --gutter: clamp(1rem, 4vw, 3rem);
+  --nav-height: 3.5rem;
+  --content-max: 82rem;
+  --measure: 36rem;
+  --radius: 0px;
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
-  --duration: 800ms;
-  --duration-slow: 1400ms;
+  --duration: 900ms;
 }
 
 @media (min-width: 768px) {
   :root {
-    --nav-height: 4rem;
+    --nav-height: 4.25rem;
   }
 }

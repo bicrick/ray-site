@@ -1,0 +1,158 @@
+{
+  "categories": [
+    {
+      "id": "cups",
+      "label": "Cups & mugs"
+    },
+    {
+      "id": "bowls",
+      "label": "Bowls"
+    },
+    {
+      "id": "jars",
+      "label": "Lidded jars"
+    },
+    {
+      "id": "baskets",
+      "label": "Baskets"
+    },
+    {
+      "id": "vessels",
+      "label": "Vases & vessels"
+    }
+  ],
+  "works": [
+    {
+      "image": "RayBrownOct23-1",
+      "title": "Mug",
+      "category": "cups",
+      "alt": "Porcelain mug with teal washes, a gold-outlined square and a black cross mark",
+      "featured": true
+    },
+    {
+      "image": "RayBrownOct23-74",
+      "title": "Lidded jar",
+      "category": "jars",
+      "alt": "Round lidded jar with teal and orange washes, black and grey square marks",
+      "featured": true
+    },
+    {
+      "image": "RayBrownOct23-60",
+      "title": "Basket",
+      "category": "baskets",
+      "alt": "Soft-walled basket with arched handle, black cross and dark teal foot",
+      "featured": true
+    },
+    {
+      "image": "RayBrownOct23-56",
+      "title": "Bud vase",
+      "category": "vessels",
+      "alt": "Bottle-form bud vase with long neck, cross and square marks in black and gold",
+      "featured": true
+    },
+    {
+      "image": "RayBrownOct23-118",
+      "title": "Nesting bowls",
+      "category": "bowls",
+      "alt": "Stack of five bowls with teal, orange and black graphic marks",
+      "featured": true
+    },
+    {
+      "image": "RayBrownOct23-115",
+      "title": "Tumbler trio",
+      "category": "cups",
+      "alt": "Three dimpled tumblers with marks and dark textured bases"
+    },
+    {
+      "image": "artaxis-mug",
+      "title": "Mug",
+      "category": "cups",
+      "alt": "Mug with orange and teal washes, a black cross-in-square mark and drips over the foot"
+    },
+    {
+      "image": "artaxis-mug-2",
+      "title": "Mug",
+      "category": "cups",
+      "alt": "Pinched mug with a cross-in-square mark, open square outline and red foot"
+    },
+    {
+      "image": "RayBrownOct23-4",
+      "title": "Mug",
+      "category": "cups",
+      "alt": "Pinched mug with cross mark and yellow textured foot"
+    },
+    {
+      "image": "RayBrownOct23-25",
+      "title": "Cup",
+      "category": "cups",
+      "alt": "Dimpled cup with gold square and orange foot"
+    },
+    {
+      "image": "RayBrownOct23-19",
+      "title": "Cup",
+      "category": "cups",
+      "alt": "Squared cup with large black cross-in-square mark"
+    },
+    {
+      "image": "RayBrownOct23-35",
+      "title": "Bowl",
+      "category": "bowls",
+      "alt": "Footed bowl with teal and orange washes and black marks"
+    },
+    {
+      "image": "RayBrownOct23-50",
+      "title": "Bowl",
+      "category": "bowls",
+      "alt": "Wide bowl with teal drips, square marks and orange foot"
+    },
+    {
+      "image": "RayBrownOct23-82",
+      "title": "Serving bowl",
+      "category": "bowls",
+      "alt": "Oval serving bowl with orange and black square marks and pink foot"
+    },
+    {
+      "image": "artaxis-bowl",
+      "title": "Bowl",
+      "category": "bowls",
+      "alt": "Wide bowl with bold black and outlined cross marks over teal and orange"
+    },
+    {
+      "image": "RayBrownOct23-78",
+      "title": "Lidded jar",
+      "category": "jars",
+      "alt": "Lidded jar with ochre band of squares and teal washes"
+    },
+    {
+      "image": "RayBrownOct23-58",
+      "title": "Basket",
+      "category": "baskets",
+      "alt": "Basket with folded handle, cross marks and dark teal foot"
+    },
+    {
+      "image": "RayBrownOct23-62",
+      "title": "Flower basket",
+      "category": "baskets",
+      "alt": "Tall flower basket with narrow handle, gold circle and cross marks"
+    },
+    {
+      "image": "RayBrownOct23-93",
+      "title": "Jar",
+      "category": "vessels",
+      "alt": "Rounded jar with teal and orange washes and black cross mark"
+    },
+    {
+      "image": "IMG_3323",
+      "title": "Flower bowl",
+      "category": "vessels",
+      "alt": "Low flower bowl with a wire frog rising from its centre"
+    },
+    {
+      "image": "MargaritaInvitational2024-12",
+      "title": "Margarita goblets",
+      "category": "cups",
+      "alt": "Pair of goblets with cube stems and gold accents",
+      "note": "Margarita Invitational, 2024"
+    }
+  ]
+}
