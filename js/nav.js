@@ -31,4 +31,20 @@ export function initNav() {
 
   onScroll();
   window.addEventListener("scroll", onScroll, { passive: true });
+
+  // Highlight the section currently in view
+  const byId = new Map(Array.from(links).map((link) => [link.hash.slice(1), link]));
+  const spy = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        const link = byId.get(entry.target.id);
+        if (link) link.classList.toggle("is-current", entry.isIntersecting);
+      });
+    },
+    { rootMargin: "-45% 0px -50% 0px" }
+  );
+  byId.forEach((_, id) => {
+    const section = document.getElementById(id);
+    if (section) spy.observe(section);
+  });
 }

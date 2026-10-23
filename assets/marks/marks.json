@@ -1,0 +1,154 @@
+{
+ "marks": [
+  {
+   "id": "rb-badge-1",
+   "kind": "badge",
+   "glaze": "black",
+   "hex": "#221f25",
+   "piece": "Mug",
+   "source": "artaxis-mug"
+  },
+  {
+   "id": "rb-badge-2",
+   "kind": "badge",
+   "glaze": "black",
+   "hex": "#1f1d23",
+   "piece": "Cup",
+   "source": "RayBrownOct23-19"
+  },
+  {
+   "id": "rb-badge-3",
+   "kind": "badge",
+   "glaze": "black",
+   "hex": "#1c1b20",
+   "piece": "Mug",
+   "source": "RayBrownOct23-1"
+  },
+  {
+   "id": "rb-badge-4",
+   "kind": "badge",
+   "glaze": "black",
+   "hex": "#2f2e38",
+   "piece": "Basket",
+   "source": "RayBrownOct23-60"
+  },
+  {
+   "id": "rb-badge-5",
+   "kind": "badge",
+   "glaze": "black",
+   "hex": "#27242b",
+   "piece": "Flower basket",
+   "source": "RayBrownOct23-62"
+  },
+  {
+   "id": "rb-badge-6",
+   "kind": "badge",
+   "glaze": "black",
+   "hex": "#2e2d37",
+   "piece": "Basket",
+   "source": "RayBrownOct23-58"
+  },
+  {
+   "id": "rb-badge-7",
+   "kind": "badge",
+   "glaze": "black",
+   "hex": "#221f26",
+   "piece": "Bowl",
+   "source": "RayBrownOct23-35"
+  },
+  {
+   "id": "rb-cross-1",
+   "kind": "cross",
+   "glaze": "black",
+   "hex": "#2a272f",
+   "piece": "Bowl",
+   "source": "artaxis-bowl"
+  },
+  {
+   "id": "rb-cross-2",
+   "kind": "cross",
+   "glaze": "black",
+   "hex": "#2a272f",
+   "piece": "Cup",
+   "source": "RayBrownOct23-25"
+  },
+  {
+   "id": "rb-cross-3",
+   "kind": "cross",
+   "glaze": "black",
+   "hex": "#191920",
+   "piece": "Jar",
+   "source": "RayBrownOct23-93"
+  },
+  {
+   "id": "rb-open-square-1",
+   "kind": "open-square",
+   "glaze": "black",
+   "hex": "#252129",
+   "piece": "Bowl",
+   "source": "RayBrownOct23-50"
+  },
+  {
+   "id": "rb-open-square-2",
+   "kind": "open-square",
+   "glaze": "black",
+   "hex": "#1e1c22",
+   "piece": "Nesting bowls",
+   "source": "RayBrownOct23-118"
+  },
+  {
+   "id": "rb-open-square-3",
+   "kind": "open-square",
+   "glaze": "black",
+   "hex": "#211d23",
+   "piece": "Bowl",
+   "source": "RayBrownOct23-35"
+  },
+  {
+   "id": "rb-open-square-4",
+   "kind": "open-square",
+   "glaze": "black",
+   "hex": "#26252b",
+   "piece": "Bowl",
+   "source": "RayBrownOct23-35"
+  },
+  {
+   "id": "rb-filled-square-1",
+   "kind": "filled-square",
+   "glaze": "black",
+   "hex": "#2a2830",
+   "piece": "Serving bowl",
+   "source": "RayBrownOct23-82"
+  },
+  {
+   "id": "rb-leaf-1",
+   "kind": "leaf",
+   "glaze": "black",
+   "hex": "#25242a",
+   "piece": "Cup",
+   "source": "RayBrownOct23-19"
+  }
+ ],
+ "palette": [
+  {
+   "name": "Underglaze black",
+   "glaze": "black",
+   "hex": "#27252c"
+  },
+  {
+   "name": "Gold luster",
+   "glaze": "gold",
+   "hex": "#c4a050"
+  },
+  {
+   "name": "Teal wash",
+   "glaze": "teal",
+   "hex": "#5db2ac"
+  },
+  {
+   "name": "Persimmon",
+   "glaze": "orange",
+   "hex": "#c76a41"
+  }
+ ]
+}

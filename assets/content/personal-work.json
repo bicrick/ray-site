@@ -1,0 +1,154 @@
+{
+  "categories": [
+    { "id": "teapots", "label": "Teapots & kettles" },
+    { "id": "pitchers", "label": "Pitchers" },
+    { "id": "ewers", "label": "Ewers" },
+    { "id": "cups", "label": "Cups & mugs" },
+    { "id": "bowls", "label": "Bowls" },
+    { "id": "jars", "label": "Jars" },
+    { "id": "baskets", "label": "Baskets" },
+    { "id": "vessels", "label": "Vessels" }
+  ],
+  "works": [
+    {
+      "image": "personal-p01-pitcher-with-cups",
+      "title": "Pitcher with Cups",
+      "category": "pitchers",
+      "alt": "Porcelain pitcher with matching cups, underglaze marks and decals",
+      "note": "2026 · Porcelain, Underglazes, Decals"
+    },
+    {
+      "image": "personal-p02-side-handled-teapot",
+      "title": "Side Handled Teapot",
+      "category": "teapots",
+      "alt": "Side-handled porcelain teapot with underglaze and decals",
+      "note": "2026 · Porcelain, Underglazes, Decals"
+    },
+    {
+      "image": "personal-p03-side-handled-teapot",
+      "title": "Side Handled Teapot",
+      "category": "teapots",
+      "alt": "Side-handled porcelain teapot with graphic surface marks",
+      "note": "2026 · Porcelain, Underglazes, Decals"
+    },
+    {
+      "image": "personal-p04-kettle",
+      "title": "Kettle",
+      "category": "teapots",
+      "alt": "Porcelain kettle with underglaze washes and decals",
+      "note": "2026 · Porcelain, Underglazes, Decals"
+    },
+    {
+      "image": "personal-p05-side-handled-teapot",
+      "title": "Side Handled Teapot",
+      "category": "teapots",
+      "alt": "Side-handled teapot in marbled porcelain with underglaze and decals",
+      "note": "2026 · Marbled Porcelain, Underglazes, Decals"
+    },
+    {
+      "image": "personal-p06-ewer",
+      "title": "Ewer",
+      "category": "ewers",
+      "alt": "Porcelain ewer with underglaze surface decoration",
+      "note": "2025 · Porcelain, Underglazes"
+    },
+    {
+      "image": "personal-p07-ewer",
+      "title": "Ewer",
+      "category": "ewers",
+      "alt": "Porcelain ewer with underglaze marks",
+      "note": "2025 · Porcelain, Underglazes"
+    },
+    {
+      "image": "personal-p08-ewer",
+      "title": "Ewer",
+      "category": "ewers",
+      "alt": "Porcelain ewer with underglaze and decals",
+      "note": "2026 · Porcelain, Underglazes, Decals"
+    },
+    {
+      "image": "sxpf-gallery-2",
+      "title": "Stemmed Cups",
+      "category": "cups",
+      "alt": "Pair of porcelain stemmed cups with sculptural stems, underglaze and decals",
+      "note": "2024 · Porcelain, Underglazes, Decals, Epoxy"
+    },
+    {
+      "image": "sxpf-gallery-3",
+      "title": "Tumblers",
+      "category": "cups",
+      "alt": "Porcelain tumblers made with a four-piece press mold",
+      "note": "2024 · Porcelain, Underglazes · Utilizing a 4 piece press mold"
+    },
+    {
+      "image": "personal-p11-pitcher",
+      "title": "Pitcher",
+      "category": "pitchers",
+      "alt": "Porcelain pitcher with underglaze washes and decals",
+      "note": "2025 · Porcelain, Underglazes, Decals"
+    },
+    {
+      "image": "personal-p12-pitcher",
+      "title": "Pitcher",
+      "category": "pitchers",
+      "alt": "Porcelain pitcher with graphic marks and decals",
+      "note": "2025 · Porcelain, Underglazes, Decals"
+    },
+    {
+      "image": "IMG_3323",
+      "title": "Flower Brick",
+      "category": "vessels",
+      "alt": "Porcelain flower brick with perforated dome and wire armature",
+      "note": "2024 · Porcelain, Underglazes, Decals"
+    },
+    {
+      "image": "RayBrownOct23-62",
+      "title": "Basket",
+      "category": "baskets",
+      "alt": "Tall porcelain flower basket with narrow handle and graphic marks",
+      "note": "2023 · Porcelain, Underglazes, Decals"
+    },
+    {
+      "image": "personal-p15-mugs",
+      "title": "Mugs",
+      "category": "cups",
+      "alt": "Porcelain mugs with underglaze and decals",
+      "note": "2025 · Porcelain, Underglazes, Decals"
+    },
+    {
+      "image": "personal-p16-mugs",
+      "title": "Mugs",
+      "category": "cups",
+      "alt": "Porcelain mugs with underglaze surface decoration",
+      "note": "2025 · Porcelain, Underglazes"
+    },
+    {
+      "image": "personal-p17-xo-jar",
+      "title": "XO Jar",
+      "category": "jars",
+      "alt": "Porcelain XO jar with underglaze and decals",
+      "note": "2025 · Porcelain, Underglazes, Decals"
+    },
+    {
+      "image": "personal-p18-cup",
+      "title": "Cup",
+      "category": "cups",
+      "alt": "Porcelain cup with underglaze and decals",
+      "note": "2026 · Porcelain, Underglazes, Decals"
+    },
+    {
+      "image": "personal-p19-bowl",
+      "title": "Bowl",
+      "category": "bowls",
+      "alt": "Porcelain bowl with underglaze and decals",
+      "note": "2026 · Porcelain, Underglazes, Decals"
+    },
+    {
+      "image": "personal-p20-cup",
+      "title": "Cup",
+      "category": "cups",
+      "alt": "Porcelain cup with underglaze and decals",
+      "note": "2026 · Porcelain, Underglazes, Decals"
+    }
+  ]
+}

@@ -6,26 +6,87 @@
     <title>Ray Brown Ceramics</title>
     <meta
       name="description"
-      content="Utilitarian pottery by Ray Brown — soft, inviting forms with confident line and energetic surface. Oxford, Mississippi."
+      content="Utilitarian pottery from my studio in Oxford, Mississippi — soft, inviting forms with confident line and energetic surface."
     />
+    <link rel="canonical" href="https://ray-brown-ceramics.vercel.app/" />
+    <link rel="icon" href="favicon.ico" sizes="48x48" />
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="theme-color" content="#f4f1ea" />
+
+    <!-- Link previews (iMessage, Slack, Facebook, LinkedIn, X).
+         These need absolute URLs: currently the Vercel demo. When the site moves to
+         raybrownceramics.com, replace https://ray-brown-ceramics.vercel.app below. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Ray Brown Ceramics" />
+    <meta property="og:title" content="Ray Brown Ceramics" />
+    <meta
+      property="og:description"
+      content="Utilitarian pottery from my studio in Oxford, Mississippi — confident line, pressurized volume, surface that invites the hand."
+    />
+    <meta property="og:url" content="https://ray-brown-ceramics.vercel.app/" />
+    <meta property="og:image" content="https://ray-brown-ceramics.vercel.app/assets/social/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="In my studio beside three of my pots: a mug, a lidded jar and a bud vase" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://ray-brown-ceramics.vercel.app/assets/social/og-image.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@300;400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
+    <script>
+      // Hold the hero entrance until Instrument Sans is ready (max 1.2s), so the title
+      // animates in once in its real font instead of swapping fonts mid-animation.
+      (function () {
+        var root = document.documentElement;
+        root.classList.add("fonts-pending");
+        var done = function () { root.classList.remove("fonts-pending"); };
+        if (document.fonts && document.fonts.ready) document.fonts.ready.then(done);
+        setTimeout(done, 1200);
+      })();
+    </script>
     <link rel="stylesheet" href="css/tokens.css" />
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/hero.css" />
-    <link rel="stylesheet" href="css/pieces.css" />
+    <link rel="stylesheet" href="css/work.css" />
     <link rel="stylesheet" href="css/sections.css" />
-    <link rel="stylesheet" href="css/instagram.css" />
+    <link rel="stylesheet" href="css/studio.css" />
+    <link rel="stylesheet" href="css/teaching.css" />
     <link rel="stylesheet" href="css/motion.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
   </head>
   <body>
+
+    <svg width="0" height="0" class="sr-only" aria-hidden="true">
+      <symbol id="icon-arrow-ne" viewBox="0 0 24 24">
+        <path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" />
+      </symbol>
+      <symbol id="icon-arrow-left" viewBox="0 0 24 24">
+        <path d="M19 12H5m6-6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" />
+      </symbol>
+      <symbol id="icon-arrow-right" viewBox="0 0 24 24">
+        <path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" />
+      </symbol>
+      <symbol id="icon-close" viewBox="0 0 24 24">
+        <path d="m6 6 12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" />
+      </symbol>
+      <symbol id="ig-glyph" viewBox="0 0 24 24">
+        <rect x="2.5" y="2.5" width="19" height="19" rx="5.5" fill="none" stroke="currentColor" stroke-width="2" />
+        <circle cx="12" cy="12" r="4.4" fill="none" stroke="currentColor" stroke-width="2" />
+        <circle cx="17.6" cy="6.4" r="1.25" fill="currentColor" />
+      </symbol>
+    </svg>
+
     <header class="site-header">
-      <a class="brand" href="#top">Ray Brown Ceramics</a>
+      <a class="brand" href="#top">
+        <svg class="mark" aria-hidden="true"><use href="assets/marks/marks.svg#rb-cross-1" /></svg>
+        Ray Brown Ceramics
+      </a>
       <button
         class="nav-toggle"
         type="button"
@@ -37,387 +98,311 @@
       </button>
       <nav class="site-nav" id="site-nav" aria-label="Primary">
         <a href="#work">Work</a>
+        <a href="personal-work.html">Personal Work</a>
+        <a href="student-work.html">Teaching</a>
         <a href="#statement">Statement</a>
+        <a href="#studio">Studio</a>
         <a href="#about">About</a>
-        <a href="#instagram">Instagram</a>
-        <a href="#contact">Contact</a>
+        <a class="nav-cta" href="#contact">Contact</a>
       </nav>
     </header>
 
-    <div class="chapter-rail" aria-hidden="true">
-      <div class="chapter-rail-fill"></div>
-    </div>
-    <div class="chapter-rail-meta" aria-hidden="true"></div>
-
     <main id="top">
-      <section class="hero chapter" aria-label="Introduction">
-        <div class="hero-media" aria-hidden="true">
-          <img
-            src="assets/photos/IMG_3323.jpg"
-            alt=""
-            width="1788"
-            height="1907"
-            fetchpriority="high"
-          />
+      <section class="hero has-field" aria-label="Introduction">
+        <div class="hero-marks" aria-hidden="true">
+          <svg class="mark" style="color: var(--glaze-orange); --x: 46%; --y: 10%; --r: 14deg; --s: 2.6rem; --d: 0.5"><use href="assets/marks/marks.svg#rb-badge-3" /></svg>
+          <svg class="mark" style="color: var(--color-ink); --x: 43%; --y: 76%; --r: -10deg; --s: 3rem; --d: 0.35"><use href="assets/marks/marks.svg#rb-badge-1" /></svg>
+          <svg class="mark" style="color: var(--glaze-teal); --x: 94%; --y: 8%; --r: -18deg; --s: 2.4rem; --d: 0.6"><use href="assets/marks/marks.svg#rb-cross-3" /></svg>
+          <svg class="mark" style="color: var(--glaze-gold); --x: 95%; --y: 90%; --r: 22deg; --s: 2.6rem; --d: 0.3"><use href="assets/marks/marks.svg#rb-open-square-2" /></svg>
+          <svg class="mark" style="color: var(--color-ink); --x: 52%; --y: 46%; --r: 30deg; --s: 2rem; --d: 0.45"><use href="assets/marks/marks.svg#rb-cross-1" /></svg>
         </div>
-        <div class="hero-overlay" aria-hidden="true"></div>
-        <div class="hero-content">
-          <p class="hero-kicker">Oxford, Mississippi</p>
-          <h1 class="hero-title">Ray Brown Ceramics</h1>
-          <p class="hero-lede">
-            Utilitarian pottery shaped for a slower encounter — confident line,
-            pressurized volume, surface that invites the hand.
-          </p>
-          <div class="hero-actions">
-            <a class="btn" href="#work">View work</a>
-            <a class="btn btn-ghost" href="#contact">Contact</a>
-          </div>
-        </div>
-        <a class="hero-scroll" href="#work">Scroll</a>
-      </section>
 
-      <section class="section work-intro chapter" id="work">
-        <div class="section-inner">
-          <p class="section-label reveal">Selected work</p>
-          <h2 class="section-title reveal reveal-delay-1">One form at a time</h2>
-        </div>
-      </section>
-
-      <div class="pieces-stream">
-        <section
-          class="piece chapter"
-          aria-label="Flower vessel"
-          data-chapter-label="Flower vessel"
-          data-focus="upper"
-        >
-          <div class="piece-media">
-            <img
-              src="assets/photos/IMG_3323.jpg"
-              alt="Sculptural ceramic bowl with wire loop and graphic surface marks"
-              width="1788"
-              height="1907"
-              loading="lazy"
-            />
-          </div>
-          <div class="piece-shade" aria-hidden="true"></div>
-          <div class="piece-meta">
-            <span class="piece-index">01 / 08</span>
-            <h3 class="piece-title">Flower vessel</h3>
-            <p class="piece-note">Pressurized volume. Quiet graphic mark.</p>
-          </div>
-        </section>
-
-        <section
-          class="piece chapter"
-          aria-label="Vessel group"
-          data-chapter-label="Vessel group"
-          data-focus="center"
-        >
-          <div class="piece-media">
-            <img
-              src="assets/photos/RayBrownOct23-115.jpg"
-              alt="Three tall ceramic vessels with graphic marks and textured bases"
-              width="800"
-              height="800"
-              loading="lazy"
-            />
-          </div>
-          <div class="piece-shade" aria-hidden="true"></div>
-          <div class="piece-meta">
-            <span class="piece-index">02 / 08</span>
-            <h3 class="piece-title">Vessel group</h3>
-            <p class="piece-note">A conversation in proportion.</p>
-          </div>
-        </section>
-
-        <section
-          class="piece chapter"
-          aria-label="Goblets"
-          data-chapter-label="Goblets"
-          data-focus="center"
-        >
-          <div class="piece-media">
-            <img
-              src="assets/photos/MargaritaInvitational2024-12.jpg"
-              alt="Pair of ceramic goblets with geometric stems and gold accents"
-              width="800"
-              height="800"
-              loading="lazy"
-            />
-          </div>
-          <div class="piece-shade" aria-hidden="true"></div>
-          <div class="piece-meta">
-            <span class="piece-index">03 / 08</span>
-            <h3 class="piece-title">Goblets</h3>
-            <p class="piece-note">Faceted stems. Fluid washes.</p>
-          </div>
-        </section>
-
-        <section
-          class="piece chapter"
-          aria-label="Mug"
-          data-chapter-label="Mug"
-          data-focus="center"
-        >
-          <div class="piece-media">
-            <img
-              src="assets/photos/RayBrownOct23-1.jpg"
-              alt="Ceramic mug with teal washes, gold square, and textured foot"
-              width="800"
-              height="800"
-              loading="lazy"
-            />
-          </div>
-          <div class="piece-shade" aria-hidden="true"></div>
-          <div class="piece-meta">
-            <span class="piece-index">04 / 08</span>
-            <h3 class="piece-title">Mug</h3>
-            <p class="piece-note">Daily use as ritual.</p>
-          </div>
-        </section>
-
-        <section class="section statement chapter is-interlude" id="statement">
-          <div class="section-inner">
-            <div>
-              <p class="section-label reveal">Artist statement</p>
-              <p class="statement-quote reveal reveal-delay-1">
-                Soft, inviting, generous, and strong — forms that feel as if they
-                are inhaling.
-              </p>
-            </div>
-            <div class="statement-body reveal reveal-delay-2">
-              <p>
-                I make utilitarian pottery with the intent to provide the user with
-                an entrance into a memorable and contemplative experience. I wish
-                to achieve cohesive forms that capture a confidence of line, with
-                supporting crisp and energetic surface decoration.
-              </p>
-              <p>
-                Both in surface and form, I strive for a captured, pressurized
-                volume within my work. I am interested in translating curvilinear
-                patterns and line work into three-dimensional forms inspired by
-                architecture and the Streamlining Era — jars, flower vases, and
-                teapots that prompt the user to slow down.
-              </p>
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <p class="kicker hero-kicker">Studio potter &middot; Oxford, Mississippi</p>
+            <h1 class="hero-title">
+              <span class="hero-title-line"><span>Ray Brown</span></span>
+              <span class="hero-title-line"><em>Ceramics</em></span>
+            </h1>
+            <p class="hero-lede">
+              Utilitarian pottery shaped for a slower encounter — confident line,
+              pressurized volume, and surface that invites the hand.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-solid" href="#work">See the work</a>
+              <a class="btn btn-line" href="#contact">Inquire</a>
             </div>
           </div>
-        </section>
 
-        <section
-          class="piece chapter"
-          aria-label="Lidded jar"
-          data-chapter-label="Lidded jar"
-          data-focus="center"
-        >
-          <div class="piece-media">
-            <img
-              src="assets/photos/RayBrownOct23-78.jpg"
-              alt="Lidded ceramic jar with mustard and teal surface decoration"
-              width="800"
-              height="800"
-              loading="lazy"
-            />
+          <div class="hero-wall" aria-label="Selected pieces" data-hero-wall>
+            <div class="hero-col"><div class="hero-col-track"></div></div>
+            <div class="hero-col hero-col--reverse"><div class="hero-col-track"></div></div>
           </div>
-          <div class="piece-shade" aria-hidden="true"></div>
-          <div class="piece-meta">
-            <span class="piece-index">05 / 08</span>
-            <h3 class="piece-title">Lidded jar</h3>
-            <p class="piece-note">Containment as a kind of pause.</p>
-          </div>
-        </section>
+        </div>
+      </section>
 
-        <section
-          class="piece chapter"
-          aria-label="Studio form"
-          data-chapter-label="Studio form"
-          data-focus="center"
-        >
-          <div class="piece-media">
-            <img
-              src="assets/photos/RayBrownOct23-62.jpg"
-              alt="Ceramic vessel photographed in studio lighting"
-              width="800"
-              height="800"
-              loading="lazy"
-            />
-          </div>
-          <div class="piece-shade" aria-hidden="true"></div>
-          <div class="piece-meta">
-            <span class="piece-index">06 / 08</span>
-            <h3 class="piece-title">Studio form</h3>
-            <p class="piece-note">Confidence of line held in soft clay.</p>
-          </div>
-        </section>
-
-        <section
-          class="piece chapter"
-          aria-label="Chalices"
-          data-chapter-label="Chalices"
-          data-focus="center"
-        >
-          <div class="piece-media">
-            <img
-              src="assets/photos/sxpf/sxpf-gallery-2.webp"
-              alt="Pair of sculptural ceramic chalices against a white ground"
-              width="1000"
-              height="1000"
-              loading="lazy"
-            />
-          </div>
-          <div class="piece-shade" aria-hidden="true"></div>
-          <div class="piece-meta">
-            <span class="piece-index">07 / 08</span>
-            <h3 class="piece-title">Chalices</h3>
-            <p class="piece-note">Streamlining-era proportion in clay.</p>
-          </div>
-        </section>
-
-        <section
-          class="piece chapter"
-          aria-label="Assemblage"
-          data-chapter-label="Assemblage"
-          data-focus="center"
-        >
-          <div class="piece-media">
-            <img
-              src="assets/photos/RayBrownOct23-118.jpg"
-              alt="Ceramic work with confident line and energetic surface decoration"
-              width="800"
-              height="800"
-              loading="lazy"
-            />
-          </div>
-          <div class="piece-shade" aria-hidden="true"></div>
-          <div class="piece-meta">
-            <span class="piece-index">08 / 08</span>
-            <h3 class="piece-title">Assemblage</h3>
-            <p class="piece-note">Surface, silhouette, and the space between.</p>
-          </div>
-        </section>
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker-track">
+          <span>Ceramics Monthly Emerging Artist 2024</span>
+          <svg class="mark"><use href="assets/marks/marks.svg#rb-cross-1" /></svg>
+          <span>Solo exhibition — Companion Gallery 2025</span>
+          <svg class="mark"><use href="assets/marks/marks.svg#rb-cross-2" /></svg>
+          <span>NCECA Studio Potter Merit Award</span>
+          <svg class="mark"><use href="assets/marks/marks.svg#rb-cross-2" /></svg>
+          <span>Kikuchi Biennale, Tokyo</span>
+          <svg class="mark"><use href="assets/marks/marks.svg#rb-open-square-1" /></svg>
+          <span>University of Mississippi</span>
+          <svg class="mark"><use href="assets/marks/marks.svg#rb-cross-1" /></svg>
+        </div>
       </div>
 
-      <section class="section about" id="about">
+      <section class="section work" id="work" data-marks="8">
         <div class="section-inner">
-          <p class="section-label reveal">About</p>
-          <h2 class="section-title reveal reveal-delay-1">Ray Brown</h2>
-          <div class="about-grid">
-            <div class="about-bio reveal reveal-delay-1">
-              <p>
-                Ray Brown was born in Houston, Texas, and received his BFA in Art
-                with Honors from the Sally McDonnell Barksdale Honors College at
-                the University of Mississippi under Matt Long. He earned an MFA
-                in Studio Art with an emphasis in Ceramics at West Virginia
-                University.
-              </p>
-              <p>
-                His work has been shown nationally and internationally, including
-                Jingdezhen, China. In 2019 he received the Studio Potter Merit
-                Award at NCECA&rsquo;s National Juried Student Exhibition. In 2024
-                he was named a Ceramics Monthly Emerging Artist. He currently
-                serves as Instructor and Ceramic Studio Technician at the
-                University of Mississippi in Oxford.
-              </p>
+          <div class="section-head">
+            <div>
+              <p class="kicker reveal">Selected work</p>
+              <h2 class="section-title reveal">One form <em>at a time</em></h2>
             </div>
-            <ul class="about-highlights reveal reveal-delay-2">
-              <li>Ceramics Monthly Emerging Artist, 2024</li>
-              <li>Instructor and Ceramics Technician, University of Mississippi</li>
-              <li>MFA Ceramics, West Virginia University</li>
-              <li>BFA Ceramics with Honors, University of Mississippi</li>
-            </ul>
+            <div class="filters reveal" role="group" aria-label="Filter work by form" data-filters></div>
+          </div>
+          <ul class="work-grid" data-work-grid></ul>
+          <div class="work-progress" aria-hidden="true">
+            <span class="work-progress-count" data-work-count>01 / 21</span>
+            <span class="work-progress-bar"><span data-work-bar></span></span>
+          </div>
+          <div class="work-more">
+            <button class="btn btn-line" type="button" data-work-more>Show all work</button>
+          </div>
+          <p class="work-portfolio-cta reveal">
+            <a class="btn btn-line" href="personal-work.html">See the full portfolio</a>
+          </p>
+        </div>
+      </section>
+
+      <section class="section statement" id="statement" data-marks="7" data-marks-tone="dark">
+        <div class="section-inner">
+          <p class="kicker reveal">Artist statement</p>
+          <blockquote class="statement-quote reveal">
+            <p>
+              Soft, inviting, generous, playful, and strong — forms that feel as if they
+              are <em>inhaling.</em>
+            </p>
+          </blockquote>
+          <div class="statement-body reveal">
+            <p>
+              I make pottery and vessels with the intent to provide the user with an
+              entrance into a memorable and contemplative experience. Crafting works that
+              are soft, inviting, generous, playful, and strong, I intend for the user to
+              leave with a sense of thoughtfulness and curiosity. I wish to achieve
+              cohesive forms that capture a confidence of line, with supporting crisp and
+              energetic surface decoration. Both in surface and form, I strive for a
+              captured, pressurized volume within my work, as if they are inhaling.
+            </p>
+            <p>
+              Furthermore, I am interested in translating curvilinear patterns and line
+              work into three-dimensional forms, extensions and parts inspired by
+              architecture and streamlining era design. By exploring these iterations, I
+              create forms that are grouped into assemblages focusing on contrast, dynamic
+              profiles and buoyant, intersecting volumes. Through traditional techniques,
+              digital processes, and a sculptural mindset, I accumulate an aggregate of
+              information in the form of proportion, line, color and texture. Each layer
+              serves as an anchor point for the next, orbiting and celebrating the
+              elements below. Overall, through playing with proportions, surface, and
+              color I hope to create a tactile and visual experience that prompts the user
+              to slow down.
+            </p>
           </div>
         </div>
       </section>
 
-      <section class="section instagram" id="instagram">
+      <section class="section studio" id="studio" data-marks="6">
         <div class="section-inner">
-          <div class="instagram-header">
+          <div class="section-head">
             <div>
-              <p class="section-label reveal">On Instagram</p>
-              <h2 class="section-title reveal reveal-delay-1">Recent reels</h2>
-              <p class="reveal reveal-delay-1">
-                Process and finished forms from the studio — watch on Instagram for more.
+              <p class="kicker reveal">
+                <svg class="ig-glyph" aria-hidden="true"><use href="#ig-glyph" /></svg>
+                From Instagram
+              </p>
+              <h2 class="section-title reveal">Process, <em>in motion</em></h2>
+              <p class="section-lede reveal">
+                Demos, kiln openings and work in progress from my ceramics studio at
+                Ole Miss.
               </p>
             </div>
             <a
-              class="instagram-profile reveal reveal-delay-2"
+              class="ig-follow reveal"
               href="https://www.instagram.com/rlbrown1995/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              @rlbrown1995
+              <svg class="ig-glyph" aria-hidden="true"><use href="#ig-glyph" /></svg>
+              <span class="ig-follow-text">
+                <strong>@rlbrown1995</strong>
+                <span data-ig-followers>Follow on Instagram</span>
+              </span>
+              <span class="ig-follow-arrow"><svg class="icon" aria-hidden="true"><use href="#icon-arrow-ne" /></svg></span>
             </a>
           </div>
-          <div class="instagram-embeds reveal reveal-delay-2">
-            <div class="instagram-embed">
-              <blockquote
-                class="instagram-media"
-                data-instgrm-permalink="https://www.instagram.com/reel/DZqaTfStX5H/"
-                data-instgrm-version="14"
-              >
-                <a href="https://www.instagram.com/reel/DZqaTfStX5H/"
-                  >View this reel on Instagram</a
-                >
-              </blockquote>
-            </div>
-            <div class="instagram-embed">
-              <blockquote
-                class="instagram-media"
-                data-instgrm-permalink="https://www.instagram.com/reel/DWwMgm5jCyJ/"
-                data-instgrm-version="14"
-              >
-                <a href="https://www.instagram.com/reel/DWwMgm5jCyJ/"
-                  >View this reel on Instagram</a
-                >
-              </blockquote>
+
+          <div class="reels reveal" data-reels>
+            <button class="reel-feature" type="button" data-reel-feature></button>
+            <div class="reel-list-wrap">
+              <p class="reel-list-label"><span data-reel-count></span> reels</p>
+              <ol class="reel-list" data-reel-list></ol>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section contact" id="contact">
+      <section class="section kiln-page" id="kiln" aria-label="Fresh from the kiln" data-marks="3">
         <div class="section-inner">
-          <p class="section-label reveal">Contact</p>
-          <h2 class="section-title reveal reveal-delay-1">Start a conversation</h2>
-          <div class="contact-grid">
-            <p class="contact-copy reveal reveal-delay-1">
-              Inquiries for available work, commissions, workshops, or exhibition
-              opportunities are welcome.
-            </p>
-            <div class="contact-links reveal reveal-delay-2">
-              <a class="contact-link" href="mailto:rlbrowni@olemiss.edu">
-                <span>Email</span>
-                rlbrowni@olemiss.edu
-              </a>
-              <a
-                class="contact-link"
-                href="https://www.instagram.com/rlbrown1995/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span>Instagram</span>
-                @rlbrown1995
-              </a>
-              <div class="contact-link contact-link--static">
-                <span>CV</span>
-                Available upon request
-              </div>
+          <div class="kiln">
+            <div class="kiln-head">
+              <p class="kicker reveal">Fresh from the kiln</p>
+              <p class="kiln-note reveal">Recent pieces as posted — tap one to open it on Instagram.</p>
             </div>
+            <div class="kiln-mosaic reveal" data-kiln></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about" id="about" data-marks="5">
+        <div class="section-inner about-grid">
+          <div class="about-media reveal">
+            <figure class="about-portrait">
+              <img
+                src="assets/img/ray-portrait-800.webp"
+                srcset="assets/img/ray-portrait-480.webp 480w, assets/img/ray-portrait-800.webp 800w, assets/img/ray-portrait-941.webp 941w"
+                sizes="(min-width: 960px) 26rem, 90vw"
+                width="941"
+                height="1088"
+                alt="Me smiling in the studio, holding a freshly thrown bowl"
+                loading="lazy"
+              />
+            </figure>
+            <figure class="about-inset">
+              <img
+                src="assets/img/studio-kiln-480.webp"
+                srcset="assets/img/studio-kiln-480.webp 480w, assets/img/studio-kiln-800.webp 800w"
+                sizes="12rem"
+                width="850"
+                height="842"
+                alt="Hard-brick kiln in the university studio"
+                loading="lazy"
+              />
+              <figcaption>The studio kiln — subject of my <a href="https://studiopotter.org/node/1950" target="_blank" rel="noopener noreferrer">Studio Potter</a> piece on swinging-door conversions.</figcaption>
+            </figure>
+            <svg class="mark mark--ink about-mark" aria-hidden="true"><use href="assets/marks/marks.svg#rb-cross-2" /></svg>
+          </div>
+          <div class="about-body">
+            <p class="kicker reveal">About</p>
+            <h2 class="section-title reveal">Ray <em>Brown</em></h2>
+            <div class="about-bio reveal">
+              <p>
+                I was born in Houston, Texas, and received my BFA in Art with Honors from
+                the Sally McDonnell Barksdale Honors College at the University of
+                Mississippi under Matt Long. Summers were spent assisting ceramic artists
+                Chris Gustin in Dartmouth, Massachusetts, and Christopher Spitzmiller in
+                New York City.
+              </p>
+              <p>
+                I went on to earn an MFA in Studio Art with an emphasis in Ceramics at
+                West Virginia University. My work has been shown nationally and
+                internationally, including at the Mufei Gallery in Jingdezhen, China. I
+                currently serve as Instructor and Ceramic Studio Technician at the
+                University of Mississippi.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section teaching-preview" id="teaching" aria-label="Teaching — student work from my classes" data-marks="4">
+        <div class="section-inner">
+          <div class="teaching-preview-head reveal">
+            <p class="kicker">Teaching</p>
+            <h2 class="section-title">Work from <em>my students</em></h2>
+            <p class="section-lede">
+              I teach beginning, intermediate, and handbuilding ceramics at the University
+              of Mississippi. Here’s work from my students — not my own studio pieces.
+            </p>
+          </div>
+          <ul class="teaching-strip" data-teaching-strip></ul>
+          <p class="teaching-preview-cta reveal">
+            <a class="btn btn-solid" href="student-work.html">See student work</a>
+          </p>
+        </div>
+      </section>
+
+      <section class="section highlights" id="highlights" aria-label="Highlights" data-marks="4">
+        <div class="section-inner">
+          <p class="kicker reveal">Highlights</p>
+          <h2 class="section-title reveal">Shows, awards <em>&amp; teaching</em></h2>
+          <ol class="cv reveal" aria-label="Selected highlights">
+            <li><span class="cv-year">Now</span><span>Instructor &amp; Ceramic Studio Technician, University of Mississippi</span></li>
+            <li><span class="cv-year">2026</span><span>Best Pouring Vessel — Companion Gallery</span></li>
+            <li><span class="cv-year">2026</span><span>Workshop: Thrown &amp; Altered — Sugar Maples Center for Creative Arts</span></li>
+            <li><span class="cv-year">2025</span><span>Solo exhibition — Companion Gallery</span></li>
+            <li><span class="cv-year">2025</span><span>11th Kikuchi Biennale — Tokyo, Japan</span></li>
+            <li><span class="cv-year">2025</span><span>Juror&rsquo;s Choice — Morningware, Saratoga Clay Arts</span></li>
+            <li><span class="cv-year">2025</span><span>Workshops — Touchstone Center for Crafts; Lighthouse Art Center</span></li>
+            <li><span class="cv-year">2024</span><span>Ceramics Monthly Emerging Artist</span></li>
+            <li><span class="cv-year">2019</span><span>Studio Potter Merit Award, NCECA National Juried Student Exhibition</span></li>
+            <li><span class="cv-year">MFA</span><span>Studio Art, Ceramics — West Virginia University</span></li>
+            <li><span class="cv-year">BFA</span><span>Art with Honors — University of Mississippi</span></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact" data-marks="8">
+        <div class="section-inner">
+          <p class="kicker reveal">Contact</p>
+          <h2 class="contact-title reveal">Say <em>hello.</em></h2>
+          <p class="contact-copy reveal">
+            Available work, commissions, workshops, and exhibition opportunities —
+            all welcome.
+          </p>
+          <a class="contact-email reveal" href="mailto:rlbrowni@olemiss.edu">rlbrowni@olemiss.edu</a>
+          <div class="contact-links reveal">
+            <a href="https://www.instagram.com/rlbrown1995/" target="_blank" rel="noopener noreferrer"><svg class="ig-glyph" aria-hidden="true"><use href="#ig-glyph" /></svg>Instagram<svg class="icon" aria-hidden="true"><use href="#icon-arrow-ne" /></svg></a>
+            <a href="mailto:rlbrowni@olemiss.edu?subject=CV%20request">Request CV</a>
           </div>
         </div>
       </section>
     </main>
-
     <footer class="site-footer">
-      <div class="section-inner">
-        <p>Ray Brown Ceramics — Oxford, Mississippi</p>
-        <p>&copy; <span id="year"></span> Ray Brown</p>
-      </div>
+      <p>
+        <svg class="mark mark--teal" aria-hidden="true"><use href="assets/marks/marks.svg#rb-cross-1" /></svg>
+        Ray Brown Ceramics — Oxford, Mississippi
+      </p>
+      <p>&copy; <span id="year"></span> Ray Brown</p>
     </footer>
+
+    <dialog class="lightbox" data-lightbox aria-label="Piece detail">
+      <div class="lightbox-frame">
+        <div class="lightbox-media" data-lightbox-media>
+          <img data-lightbox-img alt="" />
+          <button class="lightbox-btn lightbox-prev" type="button" data-lightbox-prev aria-label="Previous piece"><svg class="icon" aria-hidden="true"><use href="#icon-arrow-left" /></svg></button>
+          <button class="lightbox-btn lightbox-next" type="button" data-lightbox-next aria-label="Next piece"><svg class="icon" aria-hidden="true"><use href="#icon-arrow-right" /></svg></button>
+        </div>
+        <div class="lightbox-info">
+          <p class="kicker" data-lightbox-count></p>
+          <h3 class="lightbox-title" data-lightbox-title></h3>
+          <p class="lightbox-note" data-lightbox-note></p>
+          <a class="btn btn-line" data-lightbox-inquire href="#">Inquire about this piece</a>
+        </div>
+        <button class="lightbox-btn lightbox-close" type="button" data-lightbox-close aria-label="Close"><svg class="icon" aria-hidden="true"><use href="#icon-close" /></svg></button>
+      </div>
+    </dialog>
+
+    <dialog class="lightbox reel-dialog" data-reel-dialog aria-label="Instagram reel">
+      <div class="reel-dialog-body" data-reel-body></div>
+      <button class="lightbox-btn lightbox-close" type="button" data-reel-close aria-label="Close"><svg class="icon" aria-hidden="true"><use href="#icon-close" /></svg></button>
+    </dialog>
 
     <script>
       document.getElementById("year").textContent = String(new Date().getFullYear());
     </script>
     <script type="module" src="js/main.js"></script>
-    <script async src="https://www.instagram.com/embed.js"></script>
   </body>
 </html>

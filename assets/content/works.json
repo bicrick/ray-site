@@ -1,0 +1,198 @@
+{
+  "categories": [
+    { "id": "cups", "label": "Cups & mugs" },
+    { "id": "bowls", "label": "Bowls" },
+    { "id": "jars", "label": "Lidded jars" },
+    { "id": "baskets", "label": "Baskets" },
+    { "id": "vessels", "label": "Vases & vessels" },
+    { "id": "teapots", "label": "Teapots & kettles" },
+    { "id": "pitchers", "label": "Pitchers" },
+    { "id": "ewers", "label": "Ewers" }
+  ],
+  "works": [
+    {
+      "image": "RayBrownOct23-1",
+      "title": "Mug",
+      "category": "cups",
+      "alt": "Porcelain mug with teal washes, a gold-outlined square and a black cross mark",
+      "featured": true
+    },
+    {
+      "image": "RayBrownOct23-74",
+      "title": "Lidded jar",
+      "category": "jars",
+      "alt": "Round lidded jar with teal and orange washes, black and grey square marks",
+      "featured": true
+    },
+    {
+      "image": "RayBrownOct23-60",
+      "title": "Basket",
+      "category": "baskets",
+      "alt": "Soft-walled basket with arched handle, black cross and dark teal foot",
+      "featured": true
+    },
+    {
+      "image": "RayBrownOct23-56",
+      "title": "Bud vase",
+      "category": "vessels",
+      "alt": "Bottle-form bud vase with long neck, cross and square marks in black and gold",
+      "featured": true
+    },
+    {
+      "image": "RayBrownOct23-118",
+      "title": "Nesting bowls",
+      "category": "bowls",
+      "alt": "Stack of five bowls with teal, orange and black graphic marks",
+      "featured": true
+    },
+    {
+      "image": "personal-p02-side-handled-teapot",
+      "title": "Side Handled Teapot",
+      "category": "teapots",
+      "alt": "Side-handled porcelain teapot with underglaze and decals",
+      "note": "2026 · Porcelain, Underglazes, Decals",
+      "featured": true
+    },
+    {
+      "image": "personal-p01-pitcher-with-cups",
+      "title": "Pitcher with Cups",
+      "category": "pitchers",
+      "alt": "Porcelain pitcher with matching cups, underglaze marks and decals",
+      "note": "2026 · Porcelain, Underglazes, Decals"
+    },
+    {
+      "image": "personal-p04-kettle",
+      "title": "Kettle",
+      "category": "teapots",
+      "alt": "Porcelain kettle with underglaze washes and decals",
+      "note": "2026 · Porcelain, Underglazes, Decals"
+    },
+    {
+      "image": "personal-p06-ewer",
+      "title": "Ewer",
+      "category": "ewers",
+      "alt": "Porcelain ewer with underglaze surface decoration",
+      "note": "2025 · Porcelain, Underglazes"
+    },
+    {
+      "image": "personal-p08-ewer",
+      "title": "Ewer",
+      "category": "ewers",
+      "alt": "Porcelain ewer with underglaze and decals",
+      "note": "2026 · Porcelain, Underglazes, Decals"
+    },
+    {
+      "image": "personal-p11-pitcher",
+      "title": "Pitcher",
+      "category": "pitchers",
+      "alt": "Porcelain pitcher with underglaze washes and decals",
+      "note": "2025 · Porcelain, Underglazes, Decals"
+    },
+    {
+      "image": "personal-p17-xo-jar",
+      "title": "XO Jar",
+      "category": "jars",
+      "alt": "Porcelain XO jar with underglaze and decals",
+      "note": "2025 · Porcelain, Underglazes, Decals"
+    },
+    {
+      "image": "RayBrownOct23-115",
+      "title": "Tumbler trio",
+      "category": "cups",
+      "alt": "Three dimpled tumblers with marks and dark textured bases"
+    },
+    {
+      "image": "artaxis-mug",
+      "title": "Mug",
+      "category": "cups",
+      "alt": "Mug with orange and teal washes, a black cross-in-square mark and drips over the foot"
+    },
+    {
+      "image": "artaxis-mug-2",
+      "title": "Mug",
+      "category": "cups",
+      "alt": "Pinched mug with a cross-in-square mark, open square outline and red foot"
+    },
+    {
+      "image": "RayBrownOct23-4",
+      "title": "Mug",
+      "category": "cups",
+      "alt": "Pinched mug with cross mark and yellow textured foot"
+    },
+    {
+      "image": "RayBrownOct23-25",
+      "title": "Cup",
+      "category": "cups",
+      "alt": "Dimpled cup with gold square and orange foot"
+    },
+    {
+      "image": "RayBrownOct23-19",
+      "title": "Cup",
+      "category": "cups",
+      "alt": "Squared cup with large black cross-in-square mark"
+    },
+    {
+      "image": "RayBrownOct23-35",
+      "title": "Bowl",
+      "category": "bowls",
+      "alt": "Footed bowl with teal and orange washes and black marks"
+    },
+    {
+      "image": "RayBrownOct23-50",
+      "title": "Bowl",
+      "category": "bowls",
+      "alt": "Wide bowl with teal drips, square marks and orange foot"
+    },
+    {
+      "image": "RayBrownOct23-82",
+      "title": "Serving bowl",
+      "category": "bowls",
+      "alt": "Oval serving bowl with orange and black square marks and pink foot"
+    },
+    {
+      "image": "artaxis-bowl",
+      "title": "Bowl",
+      "category": "bowls",
+      "alt": "Wide bowl with bold black and outlined cross marks over teal and orange"
+    },
+    {
+      "image": "RayBrownOct23-78",
+      "title": "Lidded jar",
+      "category": "jars",
+      "alt": "Lidded jar with ochre band of squares and teal washes"
+    },
+    {
+      "image": "RayBrownOct23-58",
+      "title": "Basket",
+      "category": "baskets",
+      "alt": "Basket with folded handle, cross marks and dark teal foot"
+    },
+    {
+      "image": "RayBrownOct23-62",
+      "title": "Basket",
+      "category": "baskets",
+      "alt": "Tall porcelain flower basket with narrow handle, gold circle and cross marks",
+      "note": "2023 · Porcelain, Underglazes, Decals"
+    },
+    {
+      "image": "RayBrownOct23-93",
+      "title": "Jar",
+      "category": "vessels",
+      "alt": "Rounded jar with teal and orange washes and black cross mark"
+    },
+    {
+      "image": "IMG_3323",
+      "title": "Flower Brick",
+      "category": "vessels",
+      "alt": "Porcelain flower brick with perforated dome and wire armature",
+      "note": "2024 · Porcelain, Underglazes, Decals"
+    },
+    {
+      "image": "MargaritaInvitational2024-12",
+      "title": "Stemmed Cups",
+      "category": "cups",
+      "alt": "Pair of porcelain stemmed cups with sculptural stems, underglaze and decals",
+      "note": "2024 · Porcelain, Underglazes, Decals, Epoxy · Margarita Invitational"
+    }
+  ]
+}
