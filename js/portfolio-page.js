@@ -20,6 +20,7 @@ Promise.allSettled([
       clip: false,
       inquire: page !== "student",
       inquireLabel: page === "student" ? "" : "Inquire about this piece",
+      noteOnly: page === "student",
     });
     const countEl = document.querySelector("[data-portfolio-count]");
     if (countEl) countEl.textContent = String(data.works.length);

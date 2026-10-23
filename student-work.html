@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Student Work — Ray Brown Ceramics</title>
-    <meta name="description" content="Selected student ceramics from Ray Brown’s courses at the University of Mississippi — beginning, intermediate, and handbuilding." />
+    <title>Teaching — Student Work from Ray Brown’s Classes</title>
+    <meta
+      name="description"
+      content="Ceramics made by students in courses Ray Brown taught at the University of Mississippi (Art 3400 Beginning, Art 3410 Intermediate, Art 3420 Handbuilding). Not Ray’s personal studio work."
+    />
     <link rel="canonical" href="https://ray-brown-ceramics.vercel.app/student-work" />
     <link rel="icon" href="favicon.ico" sizes="48x48" />
     <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
@@ -13,11 +16,20 @@
     <meta name="theme-color" content="#f4f1ea" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Ray Brown Ceramics" />
-    <meta property="og:title" content="Student Work — Ray Brown Ceramics" />
-    <meta property="og:description" content="Selected student ceramics from Ray Brown’s courses at the University of Mississippi — beginning, intermediate, and handbuilding." />
+    <meta property="og:title" content="Teaching — Student Work from Ray Brown’s Classes" />
+    <meta
+      property="og:description"
+      content="Ceramics made by students in courses Ray Brown taught at the University of Mississippi (Art 3400, 3410, 3420). Not Ray’s personal studio work."
+    />
     <meta property="og:url" content="https://ray-brown-ceramics.vercel.app/student-work" />
     <meta property="og:image" content="https://ray-brown-ceramics.vercel.app/assets/social/og-image.jpg" />
+    <meta property="og:image:alt" content="Student ceramics from Ray Brown’s University of Mississippi classes" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Teaching — Student Work from Ray Brown’s Classes" />
+    <meta
+      name="twitter:description"
+      content="Ceramics made by students in Ray Brown’s Ole Miss ceramics courses — not his personal studio work."
+    />
     <meta name="twitter:image" content="https://ray-brown-ceramics.vercel.app/assets/social/og-image.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -72,7 +84,7 @@
       <nav class="site-nav" id="site-nav" aria-label="Primary">
         <a href="/#work">Work</a>
         <a href="personal-work.html">Personal Work</a>
-        <a href="student-work.html" class="is-current" aria-current="page">Student Work</a>
+        <a href="student-work.html" class="is-current" aria-current="page">Teaching</a>
         <a href="/#statement">Statement</a>
         <a href="/#studio">Studio</a>
         <a href="/#about">About</a>
@@ -81,25 +93,32 @@
     </header>
 
     <main id="top">
-      <section class="portfolio-hero" aria-label="Teaching portfolio">
+      <section class="portfolio-hero portfolio-hero--teaching" aria-label="Student work from Ray Brown’s classes">
         <div class="section-inner">
-          <p class="kicker reveal">Teaching portfolio</p>
-          <h1 class="portfolio-hero-title reveal">Student <em>Work</em></h1>
-          <p class="portfolio-hero-lede reveal">Selected work from courses Ray teaches at the University of Mississippi. Grouped by course as teaching evidence for applications and search committees.</p>
+          <p class="kicker reveal">Teaching evidence</p>
+          <h1 class="portfolio-hero-title reveal">Student work from <em>my classes</em></h1>
+          <p class="portfolio-hero-lede reveal">
+            These pieces were made by students — not by Ray — in ceramics courses he taught
+            at the University of Mississippi, where he serves as Instructor and Ceramics
+            Technician in the Department of Art &amp; Art History:
+            <strong>Art 3400 Beginning Ceramics</strong>,
+            <strong>Art 3410 Intermediate Ceramics</strong>, and
+            <strong>Art 3420 Handbuilding</strong>.
+          </p>
           <div class="portfolio-meta reveal">
-            <span><span data-portfolio-count>—</span> pieces</span>
-            <span>Oxford, Mississippi</span>
+            <span><span data-portfolio-count>—</span> student pieces</span>
+            <span>University of Mississippi</span>
           </div>
           <a class="portfolio-back reveal" href="/">← Back to site</a>
         </div>
       </section>
 
-      <section class="section work portfolio-gallery" id="gallery" data-marks="6">
+      <section class="section work portfolio-gallery" id="gallery" data-marks="6" aria-label="Student ceramics by course">
         <div class="section-inner">
           <div class="section-head">
             <div>
-              <p class="kicker reveal">Gallery</p>
-              <h2 class="section-title reveal">Browse <em>by course</em></h2>
+              <p class="kicker reveal">By course</p>
+              <h2 class="section-title reveal">Student pieces, <em>grouped by class</em></h2>
             </div>
             <div class="filters reveal" role="group" aria-label="Filter student work by course" data-filters></div>
           </div>
@@ -120,7 +139,7 @@
       <p>&copy; <span id="year"></span> Ray Brown</p>
     </footer>
 
-    <dialog class="lightbox" data-lightbox aria-label="Piece detail">
+    <dialog class="lightbox" data-lightbox aria-label="Student piece detail">
       <div class="lightbox-frame">
         <div class="lightbox-media" data-lightbox-media>
           <img data-lightbox-img alt="" />

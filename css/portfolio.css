@@ -8,6 +8,19 @@
     var(--color-cream);
 }
 
+/* Teaching page: cooler band so it doesn’t read like Personal Work */
+.portfolio-hero--teaching {
+  background:
+    radial-gradient(ellipse 70% 55% at 0% 0%, color-mix(in srgb, var(--color-navy) 10%, transparent), transparent 55%),
+    radial-gradient(ellipse 55% 45% at 100% 100%, color-mix(in srgb, var(--color-teal) 14%, transparent), transparent 50%),
+    var(--color-cream-deep);
+}
+
+.portfolio-hero--teaching .portfolio-hero-lede strong {
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
 .portfolio-hero .section-inner {
   max-width: var(--content-max);
   margin: 0 auto;

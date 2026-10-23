@@ -6,10 +6,16 @@ import { createImage } from "./data.js";
  *   clip?: boolean,
  *   inquire?: boolean,
  *   inquireLabel?: string,
+ *   noteOnly?: boolean,
  * }} [options]
  */
 export function initWork({ categories, works }, options = {}) {
-  const { clip = true, inquire = true, inquireLabel = "Inquire about this piece" } = options;
+  const {
+    clip = true,
+    inquire = true,
+    inquireLabel = "Inquire about this piece",
+    noteOnly = false,
+  } = options;
   const grid = document.querySelector("[data-work-grid]");
   const filters = document.querySelector("[data-filters]");
   if (!grid) return;
@@ -38,7 +44,7 @@ export function initWork({ categories, works }, options = {}) {
     meta.className = "work-meta";
     meta.innerHTML = `<span class="work-title"></span><span class="work-cat"></span>`;
     meta.children[0].textContent = work.title;
-    meta.children[1].textContent = work.categoryLabel;
+    meta.children[1].textContent = work.cardLabel || work.categoryLabel;
 
     button.append(thumb, meta);
     li.append(button);
@@ -149,7 +155,9 @@ export function initWork({ categories, works }, options = {}) {
     media.classList.toggle("is-light", work.ground === "light");
     media.classList.toggle("is-native-small", Boolean(work.nativeSmall));
     title.textContent = work.title;
-    note.textContent = [work.categoryLabel, work.note].filter(Boolean).join(" · ");
+    note.textContent = noteOnly
+      ? work.note || work.cardLabel || work.categoryLabel || ""
+      : [work.categoryLabel, work.note].filter(Boolean).join(" · ");
     const pos = visible.indexOf(index);
     count.textContent = `${String(pos + 1).padStart(2, "0")} / ${String(visible.length).padStart(2, "0")}`;
     if (inquire && inquireEl) {
