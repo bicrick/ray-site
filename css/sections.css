@@ -304,3 +304,12 @@
     display: none;
   }
 }
+
+/* Plain note in the contact row: not a link, no hover */
+.contact-links .contact-note {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  color: var(--color-muted);
+  cursor: default;
+}
