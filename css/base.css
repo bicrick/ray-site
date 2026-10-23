@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+/* Beat component display rules (e.g. .btn { display: flex }) */
+[hidden] {
+  display: none !important;
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: var(--nav-height);
