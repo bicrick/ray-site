@@ -1,6 +1,15 @@
 import { createImage } from "./data.js";
 
-export function initWork({ categories, works }) {
+/**
+ * @param {{ categories: any[], works: any[] }} data
+ * @param {{
+ *   clip?: boolean,
+ *   inquire?: boolean,
+ *   inquireLabel?: string,
+ * }} [options]
+ */
+export function initWork({ categories, works }, options = {}) {
+  const { clip = true, inquire = true, inquireLabel = "Inquire about this piece" } = options;
   const grid = document.querySelector("[data-work-grid]");
   const filters = document.querySelector("[data-filters]");
   if (!grid) return;
@@ -17,7 +26,10 @@ export function initWork({ categories, works }) {
     button.addEventListener("click", () => openLightbox(index));
 
     const thumb = document.createElement("div");
-    thumb.className = "work-thumb" + (work.ground === "light" ? " is-light" : "");
+    thumb.className =
+      "work-thumb" +
+      (work.ground === "light" ? " is-light" : "") +
+      (work.nativeSmall ? " is-native-small" : "");
     thumb.append(
       createImage(work, { sizes: "(min-width: 1280px) 20rem, (min-width: 640px) 33vw, 92vw" })
     );
@@ -34,7 +46,6 @@ export function initWork({ categories, works }) {
     return li;
   });
 
-  // Staggered entrance per row
   const observer = new IntersectionObserver(
     (entries) => {
       entries
@@ -49,15 +60,19 @@ export function initWork({ categories, works }) {
   );
   items.forEach((item) => observer.observe(item));
 
-  // Desktop shows the first eight until asked; phones get a one-per-slide carousel
   const mobile = window.matchMedia("(max-width: 767px)");
   const more = document.querySelector("[data-work-more]");
   let expanded = false;
   let filter = "all";
-  const syncClip = () => grid.classList.toggle("is-clipped", !mobile.matches && !expanded && filter === "all");
+  const syncClip = () => {
+    if (!clip) {
+      grid.classList.remove("is-clipped");
+      return;
+    }
+    grid.classList.toggle("is-clipped", !mobile.matches && !expanded && filter === "all");
+  };
   mobile.addEventListener("change", syncClip);
 
-  // Slide counter + progress for the mobile carousel
   const slideCount = document.querySelector("[data-work-count]");
   const slideBar = document.querySelector("[data-work-bar]");
   const syncProgress = () => {
@@ -77,9 +92,8 @@ export function initWork({ categories, works }) {
   if (more) more.textContent = `Show all ${works.length} pieces`;
   syncClip();
 
-  // Filters
   let visible = works.map((_, i) => i);
-  const options = [{ id: "all", label: "All" }, ...categories].map((cat) => {
+  const optionsButtons = [{ id: "all", label: "All" }, ...categories].map((cat) => {
     const count =
       cat.id === "all" ? works.length : works.filter((w) => w.category === cat.id).length;
     const button = document.createElement("button");
@@ -89,7 +103,7 @@ export function initWork({ categories, works }) {
     button.innerHTML = `<span></span><span class="filter-count">${count}</span>`;
     button.firstChild.textContent = cat.label;
     button.addEventListener("click", () => {
-      options.forEach((o) => o.setAttribute("aria-pressed", String(o === button)));
+      optionsButtons.forEach((o) => o.setAttribute("aria-pressed", String(o === button)));
       filter = cat.id;
       syncClip();
       grid.scrollTo({ left: 0 });
@@ -108,15 +122,21 @@ export function initWork({ categories, works }) {
     return button;
   });
 
-  // Lightbox
   const dialog = document.querySelector("[data-lightbox]");
+  if (!dialog) return;
+
   const media = dialog.querySelector("[data-lightbox-media]");
   const img = dialog.querySelector("[data-lightbox-img]");
   const title = dialog.querySelector("[data-lightbox-title]");
   const note = dialog.querySelector("[data-lightbox-note]");
   const count = dialog.querySelector("[data-lightbox-count]");
-  const inquire = dialog.querySelector("[data-lightbox-inquire]");
+  const inquireEl = dialog.querySelector("[data-lightbox-inquire]");
   let current = 0;
+
+  if (inquireEl) {
+    inquireEl.hidden = !inquire;
+    if (inquire) inquireEl.textContent = inquireLabel;
+  }
 
   function render(index) {
     current = index;
@@ -127,13 +147,18 @@ export function initWork({ categories, works }) {
     img.src = fresh.src;
     img.alt = fresh.alt;
     media.classList.toggle("is-light", work.ground === "light");
+    media.classList.toggle("is-native-small", Boolean(work.nativeSmall));
     title.textContent = work.title;
     note.textContent = [work.categoryLabel, work.note].filter(Boolean).join(" · ");
     const pos = visible.indexOf(index);
     count.textContent = `${String(pos + 1).padStart(2, "0")} / ${String(visible.length).padStart(2, "0")}`;
-    inquire.href = `mailto:rlbrowni@olemiss.edu?subject=${encodeURIComponent(
-      `Inquiry: ${work.title}`
-    )}&body=${encodeURIComponent(`Hi Ray, I'm interested in the ${work.title.toLowerCase()} (${work.image}) on your website.`)}`;
+    if (inquire && inquireEl) {
+      inquireEl.href = `mailto:rlbrowni@olemiss.edu?subject=${encodeURIComponent(
+        `Inquiry: ${work.title}`
+      )}&body=${encodeURIComponent(
+        `Hi Ray, I'm interested in the ${work.title.toLowerCase()} (${work.image}) on your website.`
+      )}`;
+    }
   }
 
   function step(delta) {
@@ -147,9 +172,9 @@ export function initWork({ categories, works }) {
   }
 
   initWork.open = openLightbox;
-  dialog.querySelector("[data-lightbox-prev]").addEventListener("click", () => step(-1));
-  dialog.querySelector("[data-lightbox-next]").addEventListener("click", () => step(1));
-  dialog.querySelector("[data-lightbox-close]").addEventListener("click", () => dialog.close());
+  dialog.querySelector("[data-lightbox-prev]")?.addEventListener("click", () => step(-1));
+  dialog.querySelector("[data-lightbox-next]")?.addEventListener("click", () => step(1));
+  dialog.querySelector("[data-lightbox-close]")?.addEventListener("click", () => dialog.close());
   dialog.addEventListener("click", (event) => {
     if (event.target === dialog) dialog.close();
   });

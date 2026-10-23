@@ -232,5 +232,312 @@
       800,
       964
     ]
+  },
+  "personal-p01-pitcher-with-cups": {
+    "w": 800,
+    "h": 800,
+    "widths": [
+      480,
+      800
+    ]
+  },
+  "personal-p02-side-handled-teapot": {
+    "w": 1230,
+    "h": 990,
+    "widths": [
+      480,
+      800,
+      1100,
+      1230
+    ]
+  },
+  "personal-p03-side-handled-teapot": {
+    "w": 1185,
+    "h": 1196,
+    "widths": [
+      480,
+      800,
+      1100,
+      1185
+    ]
+  },
+  "personal-p04-kettle": {
+    "w": 1270,
+    "h": 1338,
+    "widths": [
+      480,
+      800,
+      1100,
+      1270
+    ]
+  },
+  "personal-p05-side-handled-teapot": {
+    "w": 1208,
+    "h": 959,
+    "widths": [
+      480,
+      800,
+      1100,
+      1208
+    ]
+  },
+  "personal-p06-ewer": {
+    "w": 800,
+    "h": 800,
+    "widths": [
+      480,
+      800
+    ]
+  },
+  "personal-p07-ewer": {
+    "w": 800,
+    "h": 800,
+    "widths": [
+      480,
+      800
+    ]
+  },
+  "personal-p08-ewer": {
+    "w": 800,
+    "h": 800,
+    "widths": [
+      480,
+      800
+    ]
+  },
+  "personal-p11-pitcher": {
+    "w": 800,
+    "h": 800,
+    "widths": [
+      480,
+      800
+    ]
+  },
+  "personal-p12-pitcher": {
+    "w": 800,
+    "h": 800,
+    "widths": [
+      480,
+      800
+    ]
+  },
+  "personal-p15-mugs": {
+    "w": 800,
+    "h": 800,
+    "widths": [
+      480,
+      800
+    ]
+  },
+  "personal-p16-mugs": {
+    "w": 800,
+    "h": 800,
+    "widths": [
+      480,
+      800
+    ]
+  },
+  "personal-p17-xo-jar": {
+    "w": 800,
+    "h": 800,
+    "widths": [
+      480,
+      800
+    ]
+  },
+  "personal-p18-cup": {
+    "w": 1247,
+    "h": 1247,
+    "widths": [
+      480,
+      800,
+      1100,
+      1247
+    ]
+  },
+  "personal-p19-bowl": {
+    "w": 1247,
+    "h": 1160,
+    "widths": [
+      480,
+      800,
+      1100,
+      1247
+    ]
+  },
+  "personal-p20-cup": {
+    "w": 1247,
+    "h": 1079,
+    "widths": [
+      480,
+      800,
+      1100,
+      1247
+    ]
+  },
+  "student-p01-plates": {
+    "w": 1055,
+    "h": 928,
+    "widths": [
+      480,
+      800,
+      1055
+    ]
+  },
+  "student-p02-couch-jar": {
+    "w": 665,
+    "h": 533,
+    "widths": [
+      480,
+      665
+    ]
+  },
+  "student-p03-teapot": {
+    "w": 781,
+    "h": 666,
+    "widths": [
+      480,
+      781
+    ]
+  },
+  "student-p04-pedestal-bowl": {
+    "w": 345,
+    "h": 433,
+    "widths": [
+      345
+    ]
+  },
+  "student-p05-sheep": {
+    "w": 841,
+    "h": 932,
+    "widths": [
+      480,
+      800,
+      841
+    ]
+  },
+  "student-p06-dog-themed-set": {
+    "w": 762,
+    "h": 623,
+    "widths": [
+      480,
+      762
+    ]
+  },
+  "student-p07-sculptural-plate": {
+    "w": 357,
+    "h": 386,
+    "widths": [
+      357
+    ]
+  },
+  "student-p08-majoras-mask": {
+    "w": 352,
+    "h": 351,
+    "widths": [
+      352
+    ]
+  },
+  "student-p09-abstracted-deer": {
+    "w": 837,
+    "h": 1246,
+    "widths": [
+      480,
+      800,
+      837
+    ]
+  },
+  "student-p10-wolf-mask": {
+    "w": 836,
+    "h": 938,
+    "widths": [
+      480,
+      800,
+      836
+    ]
+  },
+  "student-p11-swordfish": {
+    "w": 795,
+    "h": 740,
+    "widths": [
+      480,
+      795
+    ]
+  },
+  "student-p12-anatomical-arm-study": {
+    "w": 815,
+    "h": 1308,
+    "widths": [
+      480,
+      800,
+      815
+    ]
+  },
+  "student-p13-hand-cup": {
+    "w": 818,
+    "h": 606,
+    "widths": [
+      480,
+      800,
+      818
+    ]
+  },
+  "student-p13-stemmed-glasses": {
+    "w": 787,
+    "h": 624,
+    "widths": [
+      480,
+      787
+    ]
+  },
+  "student-p14-tankards": {
+    "w": 838,
+    "h": 569,
+    "widths": [
+      480,
+      800,
+      838
+    ]
+  },
+  "student-p15-articulated-frog-doll": {
+    "w": 905,
+    "h": 1207,
+    "widths": [
+      480,
+      800,
+      905
+    ]
+  },
+  "student-p16-cyanotype-casserole": {
+    "w": 762,
+    "h": 653,
+    "widths": [
+      480,
+      762
+    ]
+  },
+  "student-p17-strawberry-lidded-mug": {
+    "w": 858,
+    "h": 882,
+    "widths": [
+      480,
+      800,
+      858
+    ]
+  },
+  "student-p18-acorn-cap-jars": {
+    "w": 750,
+    "h": 544,
+    "widths": [
+      480,
+      750
+    ]
+  },
+  "student-p19-floral-kylix": {
+    "w": 357,
+    "h": 333,
+    "widths": [
+      357
+    ]
   }
 }

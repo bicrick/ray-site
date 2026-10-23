@@ -13,15 +13,20 @@ export function loadJSON(path) {
   return cache.get(path);
 }
 
-export async function loadWorks() {
+export async function loadWorks(cataloguePath = "assets/content/works.json") {
   const [catalogue, images] = await Promise.all([
-    loadJSON("assets/content/works.json"),
+    loadJSON(cataloguePath),
     loadJSON("assets/content/images.json"),
   ]);
   const labels = Object.fromEntries(catalogue.categories.map((c) => [c.id, c.label]));
   const works = catalogue.works
     .filter((work) => images[work.image])
-    .map((work) => ({ ...work, categoryLabel: labels[work.category], meta: images[work.image] }));
+    .map((work) => ({
+      ...work,
+      categoryLabel: labels[work.category],
+      meta: images[work.image],
+      nativeSmall: Math.max(images[work.image].w, images[work.image].h) < 480,
+    }));
   return { categories: catalogue.categories, works };
 }
 

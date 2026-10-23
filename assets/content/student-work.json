@@ -1,0 +1,149 @@
+{
+  "categories": [
+    { "id": "art3400", "label": "Art 3400 · Beginning" },
+    { "id": "art3410", "label": "Art 3410 · Intermediate" },
+    { "id": "art3420", "label": "Art 3420 · Handbuilding" }
+  ],
+  "works": [
+    {
+      "image": "student-p01-plates",
+      "title": "Plates",
+      "category": "art3410",
+      "alt": "Stoneware plates with celadon glaze from an intermediate ceramics plate project",
+      "note": "Art 3410 · Intermediate Ceramics Plate Project · Stoneware, Celadon, Cone 10 Reduction · 9×9×1 in · Fall 2024"
+    },
+    {
+      "image": "student-p02-couch-jar",
+      "title": "Couch Jar",
+      "category": "art3400",
+      "alt": "Stoneware couch jar with removable cushions and divided jewelry interior",
+      "note": "Art 3400 Beginning Final Project · 4 Objects With A Theme · Jewelry containment and display · Removable cushions, interior divided into two sections · Green slip, clear glaze, stoneware, cone 10 reduction · 4×6×4 in · Fall 2025"
+    },
+    {
+      "image": "student-p03-teapot",
+      "title": "Teapot",
+      "category": "art3410",
+      "alt": "Stoneware teapot with purple glaze from a teapot and covered vessel project",
+      "note": "Art 3410 Intermediate Ceramics · Teapot and Covered Vessel Project · Purple glaze, stoneware, cone 10 reduction · 3×3×4 in · Spring 2025"
+    },
+    {
+      "image": "student-p04-pedestal-bowl",
+      "title": "Pedestal Bowl",
+      "category": "art3400",
+      "alt": "Stoneware pedestal bowl with floral imagery and celadon glaze",
+      "note": "Art 3400 Beginning Final Project · 4 Objects With A Theme · Floral imagery and additions · Stoneware, celadon, cone 10 reduction · 4×4×8 in · Fall 2024"
+    },
+    {
+      "image": "student-p05-sheep",
+      "title": "Sheep",
+      "category": "art3420",
+      "alt": "Abstracted stoneware sheep figure with white slip and oxide wash",
+      "note": "Art 3420 Handbuilding First Project · Abstracted Animal Figures · Stoneware, white slip, underglaze and oxide wash, clear glaze, oxidation cone 6 · 16×27×27 in · Spring 2025"
+    },
+    {
+      "image": "student-p06-dog-themed-set",
+      "title": "Dog Themed Set",
+      "category": "art3400",
+      "alt": "Stoneware drinkware set and snack dish with bowl and stein unstacking from cups",
+      "note": "Art 3400 Beginning Final Project · 4 Objects With A Theme · Drinkware set and snack dish · Bowl and stein unstack from 5 cups · Stoneware, white slip, clear glaze, cone 10 reduction · 8×4×8 in · Fall 2024"
+    },
+    {
+      "image": "student-p07-sculptural-plate",
+      "title": "Sculptural Plate",
+      "category": "art3400",
+      "alt": "Stoneware sculptural plate with floral imagery and celadon over matte white glaze",
+      "note": "Art 3400 Beginning Slab Plate Project · Floral imagery and additions · Stoneware, celadon over matte white glaze, cone 10 reduction · 9×9×1 in · Fall 2024"
+    },
+    {
+      "image": "student-p08-majoras-mask",
+      "title": "Majora’s Mask",
+      "category": "art3420",
+      "alt": "Stoneware wall hanging inspired by Majora’s Mask from Zelda",
+      "note": "Art 3420 Handbuilding Final Project · Pick Your Own Adventure · Zelda, wall hanging · Stoneware, multiple slips, underglaze and oxide wash, clear glaze, oxidation cone 6 · 24×24×6 in · Fall 2024"
+    },
+    {
+      "image": "student-p09-abstracted-deer",
+      "title": "Abstracted Deer",
+      "category": "art3420",
+      "alt": "Abstracted stoneware deer form with white slip and clear glaze",
+      "note": "Art 3420 Handbuilding Final Project · Pick Your Own Adventure · Stoneware, white slip, clear glaze, oxidation cone 10 · 3×14×24 in · Spring 2025"
+    },
+    {
+      "image": "student-p10-wolf-mask",
+      "title": "Wolf Mask",
+      "category": "art3420",
+      "alt": "Abstracted stoneware wolf mask with multiple slips and oxide wash",
+      "note": "Art 3420 Handbuilding Project 1 · Abstracted Animal · Stoneware, multiple slips, underglaze and oxide wash, clear glaze, oxidation cone 6 · 12×12×14 in · Fall 2024"
+    },
+    {
+      "image": "student-p11-swordfish",
+      "title": "Swordfish",
+      "category": "art3400",
+      "alt": "Stoneware swordfish pinch pot with multiple slips and clear glaze",
+      "note": "Art 3400 · Project 1 Pinch Pots · Stoneware, multiple slips, clear glaze, reduction, cone 10 · 2×5×3 in · Spring 2025"
+    },
+    {
+      "image": "student-p12-anatomical-arm-study",
+      "title": "Anatomical Arm Study",
+      "category": "art3400",
+      "alt": "Stoneware anatomical arm study pinch pot with multiple slips",
+      "note": "Art 3400 · Project 1 Pinch Pots · Stoneware, multiple slips, clear glaze, reduction, cone 10 · 3×3×16 in · Spring 2025"
+    },
+    {
+      "image": "student-p13-hand-cup",
+      "title": "Hand Cup",
+      "category": "art3400",
+      "alt": "Stoneware hand cup with finger-like handles in copper red and jet black glazes",
+      "note": "Art 3400 · Final Project · 4 Objects With A Theme · Stoneware, multiple slips, Phil’s White, Tom Coleman Jet Black, Copper Red, reduction, cone 10 · 2×8×4 in · Spring 2025"
+    },
+    {
+      "image": "student-p13-stemmed-glasses",
+      "title": "Stemmed Glasses",
+      "category": "art3410",
+      "alt": "Grouping of three stoneware stemmed glasses with Oribe glaze",
+      "note": "Art 3410 · Final Project · Dinnerware Set · Grouping of 3 · Stoneware, Oribe Glaze, Cone 10 Reduction · 2×2×7 in · Spring 2025"
+    },
+    {
+      "image": "student-p14-tankards",
+      "title": "Tankards",
+      "category": "art3410",
+      "alt": "Grouping of two stoneware tankards with Oribe glaze",
+      "note": "Art 3410 · Final Project · Dinnerware Set · Grouping of 2 · Stoneware, Oribe Glaze, Cone 10 Reduction · 2×3×5 in · Spring 2025"
+    },
+    {
+      "image": "student-p15-articulated-frog-doll",
+      "title": "Articulated Frog Doll",
+      "category": "art3420",
+      "alt": "Articulated stoneware frog doll with iron glaze",
+      "note": "Art 3420 · Final Project · Stoneware, Iron Glaze, Cone 10 Reduction · 1.5×1.5×6 in · Fall 2023"
+    },
+    {
+      "image": "student-p16-cyanotype-casserole",
+      "title": "Cyanotype Lidded Casserole",
+      "category": "art3410",
+      "alt": "Thrown and altered stoneware lidded casserole with dried plant resist and blue slip",
+      "note": "Art 3410 · Final Project · Centerpiece · Cyanotype Inspired Lidded Casserole Dish · Thrown, altered, condensation bump texture under lid · Stoneware, dried plant resist, blue slip, Cone 10 Reduction · 9×9×8 in · Fall 2023"
+    },
+    {
+      "image": "student-p17-strawberry-lidded-mug",
+      "title": "Strawberry Lidded Mug",
+      "category": "art3400",
+      "alt": "Stoneware strawberry lidded mug with red and green slip",
+      "note": "Art 3400 · Final Project · 4 Objects With A Theme · Stoneware, red and green slip, thrown flanged lid, Cone 10 Reduction · 3×3×4 in · Fall 2025"
+    },
+    {
+      "image": "student-p18-acorn-cap-jars",
+      "title": "Acorn Cap Jars",
+      "category": "art3400",
+      "alt": "Stoneware acorn cap jars with thrown flanged rim and carved lids",
+      "note": "Art 3400 · Final Project · 4 Objects With A Theme · Stoneware, slip, thrown flanged rim and thrown and carved lid · Tomato Red and Passion Purple glazes, Cone 10 Reduction · 3×3×4 in · Fall 2024"
+    },
+    {
+      "image": "student-p19-floral-kylix",
+      "title": "Floral Kylix",
+      "category": "art3400",
+      "alt": "Stoneware floral kylix with thrown, pinched, and sculpted additions",
+      "note": "Art 3400 · Final Project · 4 Objects With A Theme · Thrown, pinched, sculpted additions · Stoneware, Cone 10 Reduction · 6×6×5 in · Fall 2024"
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+/* Dedicated Personal / Student portfolio pages */
+
+.portfolio-hero {
+  padding: calc(var(--nav-height) + var(--space-8)) var(--gutter) var(--space-7);
+  background:
+    radial-gradient(ellipse 80% 60% at 100% 0%, color-mix(in srgb, var(--color-teal) 12%, transparent), transparent 55%),
+    radial-gradient(ellipse 50% 40% at 0% 100%, color-mix(in srgb, var(--color-orange) 10%, transparent), transparent 50%),
+    var(--color-cream);
+}
+
+.portfolio-hero .section-inner {
+  max-width: var(--content-max);
+  margin: 0 auto;
+}
+
+.portfolio-hero-title {
+  font-size: var(--text-2xl);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+  margin: 0 0 var(--space-4);
+}
+
+.portfolio-hero-title em {
+  font-style: italic;
+  font-weight: 500;
+  color: var(--color-teal);
+}
+
+.portfolio-hero-lede {
+  max-width: 36rem;
+  color: var(--color-muted);
+  font-size: var(--text-md);
+  line-height: 1.55;
+  margin: 0 0 var(--space-5);
+}
+
+.portfolio-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3) var(--space-5);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+.portfolio-gallery {
+  padding-top: var(--space-6);
+  padding-bottom: var(--space-9);
+}
+
+.portfolio-gallery .work-more {
+  display: none !important;
+}
+
+.portfolio-gallery .work-progress {
+  display: none;
+}
+
+/* Small native embeds: contain, never stretch soft pixels */
+.work-thumb.is-native-small {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-cream-deep);
+}
+
+.work-thumb.is-native-small img {
+  object-fit: contain;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.lightbox-media.is-native-small {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-cream-deep);
+}
+
+.lightbox-media.is-native-small img {
+  object-fit: contain;
+  width: auto;
+  height: auto;
+  max-width: min(100%, 420px);
+  max-height: min(70vh, 420px);
+}
+
+.portfolio-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: var(--space-4);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-ink);
+  text-decoration: none;
+  border-bottom: 1.5px solid var(--color-stone);
+  padding-bottom: 0.1rem;
+  transition: border-color 200ms ease;
+}
+
+.portfolio-back:hover {
+  border-color: var(--color-ink);
+}
+
+@media (max-width: 767px) {
+  /* Portfolio pages are long galleries — don't force one-section-per-viewport */
+  body[data-portfolio-page] main > section {
+    min-height: 0;
+    justify-content: flex-start;
+  }
+
+  .portfolio-hero {
+    padding-top: calc(var(--nav-height) + var(--space-6));
+    padding-bottom: var(--space-5);
+  }
+
+  .portfolio-gallery {
+    min-height: auto;
+    padding-top: var(--space-5);
+  }
+
+  .portfolio-gallery .section-inner {
+    padding-bottom: var(--space-7);
+  }
+}
