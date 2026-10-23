@@ -58,7 +58,10 @@
   .statement-body {
     grid-template-columns: 1fr 1fr;
     gap: var(--space-7);
-    max-width: 52rem;
+    max-width: 58rem;
+    font-size: 1.25rem;
+    line-height: 1.65;
+    color: color-mix(in srgb, var(--color-cream) 86%, transparent);
   }
 }
 
