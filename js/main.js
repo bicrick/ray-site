@@ -4,6 +4,7 @@ import { loadWorks } from "./data.js";
 import { initHeroWall } from "./hero-wall.js";
 import { initWork } from "./work.js";
 import { initStudio } from "./studio.js";
+import { initTeachingPreview } from "./teaching-preview.js";
 import { initMarkFields, layoutMarks, initStampIn } from "./marks.js";
 import { initScrollFx } from "./scroll-fx.js";
 
@@ -16,6 +17,7 @@ Promise.allSettled([
     initHeroWall(data.works, (i) => initWork.open?.(i));
   }),
   initStudio(),
+  initTeachingPreview(),
   initMarkFields().then((fields) => setFields?.(fields)),
 ]).then((results) => {
   results
