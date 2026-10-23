@@ -273,3 +273,14 @@
     padding-block: var(--space-8);
   }
 }
+
+/* Ray's RB stamp, traced from a real impression */
+.brand .brand-stamp {
+  width: 1.75rem;
+  height: 1.65rem;
+  font-size: inherit;
+}
+
+.brand:hover .brand-stamp {
+  transform: none;
+}
